@@ -1,0 +1,36 @@
+#contents {
+	width: 100%;
+}
+.login-card {
+	width: 40%;
+	background: #53d8f3;
+	margin-right: auto;
+	margin-left : auto;
+}
+.header-area {
+	width: 100%;
+}
+.title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.subtitle {
+	font-size: 1em;
+}
+.content-area {
+	width: 100%;
+	text-align: center;
+}
+.input {
+	width: 90%;
+}
+.actions-area{
+	width: 90%;
+	text-align: center;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.login-button {
+	width: 50%;
+}

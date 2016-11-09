@@ -4,28 +4,15 @@ import { AuthService }      from '../stores/authStore';
 
 @Component({
   selector: 'todoLogin',
-  template: `
-    <h2>LOGIN</h2>
-    <p>{{message}}</p>
-    <p>
-      <button (click)="login()"  *ngIf="!authService.isLoggedIn">Login</button>
-      <button (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
-    </p>
-  `,
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
 
 export class LoginComponent {
-    message: string;
     constructor(private authService: AuthService, private router: Router) {
-        this.setMessage();
-    }
-    setMessage() {
-        this.message = 'Logged ' + (this.authService.isLoggedIn ? 'in' : 'out');
     }
     login() {
-        this.message = 'Trying to log in ...';
         this.authService.login().subscribe(() => {
-            this.setMessage();
             if (this.authService.isLoggedIn) {
                 let redirect = this.authService.redirectUrl ? this.authService.redirectUrl : '/top';
                 let navigationExtras: NavigationExtras = {
@@ -38,6 +25,5 @@ export class LoginComponent {
     }
     logout() {
         this.authService.logout();
-        this.setMessage();
     }
 }

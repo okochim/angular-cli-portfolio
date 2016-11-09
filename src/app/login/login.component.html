@@ -1,3 +1,20 @@
-<p>
-  login works!
-</p>
+<div id="contents">
+  <md-card class="login-card">
+    <md-card-header class="header-area">
+      <md-card-title class="title">USER LOGIN PAGE</md-card-title>
+      <md-card-subtitle class="subtitle">Please enter user ID and password and login.</md-card-subtitle>
+    </md-card-header>
+    <form #loginForm="ngForm">
+      <md-card-content class="content-area">
+        <md-input placeholder="USER ID" name="loginid" [(ngModel)]="loginid" required class="input"></md-input>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <md-input placeholder="PASSWORD" name="password" [(ngModel)]="password" required class="input"></md-input>
+      </md-card-content>
+      <md-card-actions class="actions-area">
+        <button class="login-button" md-raised-button color="primary" (click)="login()">Login</button>
+        <!--<button class="login-button" [disabled]="!loginForm.form.valid" md-raised-button color="primary" (click)="login()">Login</button>-->
+      </md-card-actions>
+    </form>
+  </md-card>
+</div>

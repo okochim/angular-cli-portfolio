@@ -2,7 +2,8 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard }      from './stores/authGuardStore';
 import { AuthService }    from './stores/authStore';
-import { loginRoutes, authProviders }  from './login/login.routing';
+import { LoginComponent } from './login/login.component';
+import { TopComponent } from './top/top.component';
 
 const appRoutes: Routes = [
   {
@@ -10,10 +11,16 @@ const appRoutes: Routes = [
     redirectTo: '/login',
     pathMatch: 'full'
   },
-  ...loginRoutes
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'top',
+    loadChildren: './top/top.module#TopModule',
+  }
 ];
-export const appRoutingProviders: any[] = [
-  authProviders,
+export const authProviders = [
   AuthGuard,
   AuthService
 ];
