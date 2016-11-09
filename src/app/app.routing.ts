@@ -17,7 +17,8 @@ const appRoutes: Routes = [
   },
   {
     path: 'top',
-    loadChildren: './top/top.module#TopModule',
+    component: TopComponent,
+    canActivate: [AuthGuard]
   }
 ];
 export const authProviders = [

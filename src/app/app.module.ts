@@ -7,21 +7,20 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { TopComponent } from './top/top.component';
 
 import { TopModule } from './top/top.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    TopComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     routing,
+    TopModule,
     MaterialModule.forRoot()
   ],
   providers: [authProviders],
