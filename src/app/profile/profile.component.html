@@ -35,8 +35,8 @@
         </div>
         <div class="input-block">
           <md-radio-group>
-            <md-radio-button value="1">男</md-radio-button>
-            <md-radio-button value="2">女</md-radio-button>
+            <md-radio-button value="1">MEN</md-radio-button>
+            <md-radio-button value="2">WOMAN</md-radio-button>
           </md-radio-group>
         </div>
       </md-card-content>
@@ -53,7 +53,14 @@
           <span>Final Education</span>
         </div>
         <div class="input-block">
-          <md-input placeholder="Final Education" name="final_education" [(ngModel)]="final_education" required class="input"></md-input>
+          <select>
+            <option selected>Please select</option>
+            <option>High school graduate</option>
+            <option>Vocational school graduate</option>
+            <option>Bachelor's degree</option>
+            <option>Masters degree</option>
+            <option>Other</option>
+          </select>
         </div>
       </md-card-content>
       <md-card-content class="content-area">

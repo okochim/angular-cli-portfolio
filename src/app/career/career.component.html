@@ -1,3 +1,79 @@
-<p>
-  career works!
-</p>
+<div id="profile">
+  <md-card class="border-square">
+    <md-card-header class="header-area">
+      <md-card-title class="title">Career registration / editing</md-card-title>
+      <md-card-subtitle class="subtitle">Please register / edit your career.</md-card-subtitle>
+    </md-card-header>
+    <form #loginForm="ngForm">
+      <md-card-content class="content-area">
+        <div class="item-block">
+          <span>Skill</span>
+        </div>
+        <div class="input-block">
+          <md-input placeholder="Name (Kanji)" name="name_kanji" [(ngModel)]="name_kanji" required class="input"></md-input>
+        </div>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <div class="item-block">
+          <span>Job career</span>
+        </div>
+        <div class="input-block">
+          <md-input placeholder="Name (phonetic)" name="name_phonetic" [(ngModel)]="name_phonetic" required class="input"></md-input>
+        </div>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <div class="item-block">
+          <span>period</span>
+        </div>
+        <div class="input-block">
+          <md-input placeholder="Age" name="age" [(ngModel)]="age" required class="input"></md-input>
+        </div>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <div class="item-block">
+          <span>Project Outline</span>
+        </div>
+        <div class="input-block">
+          <md-radio-group>
+            <md-radio-button value="1">MEN</md-radio-button>
+            <md-radio-button value="2">WOMAN</md-radio-button>
+          </md-radio-group>
+        </div>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <div class="item-block">
+          <span>Project personnel</span>
+        </div>
+        <div class="input-block">
+          <md-input placeholder="Nearest Station" name="nearest_station" [(ngModel)]="nearest_station" required class="input"></md-input>
+        </div>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <div class="item-block">
+          <span>Environment · Language</span>
+        </div>
+        <div class="input-block">
+          <select>
+            <option selected>Please select</option>
+            <option>High school graduate</option>
+            <option>Vocational school graduate</option>
+            <option>Bachelor's degree</option>
+            <option>Masters degree</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <div class="item-block">
+          <span>Job title</span>
+        </div>
+        <div class="input-block">
+          <md-input placeholder="Language Study" name="language_study" [(ngModel)]="language_study" required class="input"></md-input>
+        </div>
+      </md-card-content>
+      <md-card-actions class="actions-area">
+        <button class="login-button" md-raised-button color="primary" (click)="login()" class="size-middle">Regist</button>
+      </md-card-actions>
+    </form>
+  </md-card>
+</div>
