@@ -1,10 +1,13 @@
-/*.contents {
-}*/
+#contents {
+  margin-bottom: 20px;
+}
 .card-size {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 24px;
   padding-right: 24px;
+  border: 1px solid #000000;
+  background: #fbc9a2;
 }
 .icon-size-small {
   font-size:12px;
