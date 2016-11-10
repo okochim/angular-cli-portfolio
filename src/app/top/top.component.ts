@@ -14,7 +14,7 @@ export class TopComponent implements OnInit {
   }
 
   public gotoPage(url: string) {
-    let link = [url];
+    let link = ['portfolio',url];
     this.router.navigate(link);
   }
 }

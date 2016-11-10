@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import { MaterialModule } from '@angular/material';
 
-import { topRouting } from './top.routing';
+import { TopRouting } from './top.routing';
 import { TopComponent } from '../top/top.component';
 import { CareerComponent } from '../career/career.component';
 import { ProfileComponent } from '../profile/profile.component';
@@ -14,7 +14,7 @@ import { ViewPortfolioComponent } from '../view-portfolio/view-portfolio.compone
   imports: [
     CommonModule,
     FormsModule,
-    topRouting,
+    TopRouting,
     MaterialModule.forRoot()
   ],
   declarations: [
