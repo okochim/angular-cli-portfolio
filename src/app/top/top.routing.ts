@@ -15,7 +15,7 @@ import { AuthGuard } from '../stores/authGuardStore';
       {
         path: '',
         component: TopComponent,
-        canActivate: [AuthGuard],
+        // canActivate: [AuthGuard],
         children: [
           {
             path: '',
@@ -25,22 +25,22 @@ import { AuthGuard } from '../stores/authGuardStore';
           {
             path: 'view',
             component: ViewPortfolioComponent,
-            canActivate: [AuthGuard]
+            // canActivate: [AuthGuard]
           },
           {
             path: 'career',
             component: CareerComponent,
-            canActivate: [AuthGuard]
+            // canActivate: [AuthGuard]
           },
           {
             path: 'profile',
             component: ProfileComponent,
-            canActivate: [AuthGuard]
+            // canActivate: [AuthGuard]
           },
           {
             path: 'settings',
             component: SettingsComponent,
-            canActivate: [AuthGuard]
+            // canActivate: [AuthGuard]
           }
         ]
       }

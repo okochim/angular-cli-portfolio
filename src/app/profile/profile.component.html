@@ -1,3 +1,48 @@
-<p>
-  profile works!
-</p>
+<div id="profile">
+  <md-card class="login-card">
+    <md-card-header class="header-area">
+      <md-card-title class="title">Profile registration / editing</md-card-title>
+      <md-card-subtitle class="subtitle">Please register / edit your profile.</md-card-subtitle>
+    </md-card-header>
+    <form #loginForm="ngForm">
+      <md-card-content class="content-area">
+        <span>Name (Kanji)</span>
+        <md-input placeholder="Name (Kanji)" name="name_kanji" [(ngModel)]="name_kanji" required class="input"></md-input>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <span>Name (phonetic)</span>
+        <md-input placeholder="Name (phonetic)" name="name_phonetic" [(ngModel)]="name_phonetic" required class="input"></md-input>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <span>Age</span>
+        <md-input placeholder="Age" name="age" [(ngModel)]="age" required class="input"></md-input>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <span>Sex</span>
+        <md-radio-group>
+          <md-radio-button value="1">男</md-radio-button>
+          <md-radio-button value="2">女</md-radio-button>
+        </md-radio-group>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <span>Nearest Station</span>
+        <md-input placeholder="Nearest Station" name="nearest_station" [(ngModel)]="nearest_station" required class="input"></md-input>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <span>Final Education</span>
+        <md-input placeholder="Final Education" name="final_education" [(ngModel)]="final_education" required class="input"></md-input>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <span>Language Study</span>
+        <md-input placeholder="Language Study" name="language_study" [(ngModel)]="language_study" required class="input"></md-input>
+      </md-card-content>
+      <md-card-content class="content-area">
+        <span>Qualification</span>
+        <textarea placeholder="Textarea with autosize" name="qualification" [(ngModel)]="qualification"></textarea>
+      </md-card-content>
+      <md-card-actions class="actions-area">
+        <button class="login-button" md-raised-button color="primary" (click)="login()">Regist</button>
+      </md-card-actions>
+    </form>
+  </md-card>
+</div>
