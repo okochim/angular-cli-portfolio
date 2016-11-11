@@ -49,4 +49,4 @@ deploy:
     - script:
         name: azure ftp deploy
         code: |
-          lftp -u ${FTP_USERNAME},${FTP_PASSWORD} -e "mirror -Rev dist/. /home/site/wwwroot/." ${FTP_SERVER_URL}
+          lftp -u ${FTP_USERNAME},${FTP_PASSWORD} -e "mirror -Rev dist/. /site/wwwroot/." ${FTP_SERVER_URL}
