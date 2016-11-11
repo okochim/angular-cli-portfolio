@@ -1,5 +1,5 @@
 {
-  "name": "aucnet-station-login",
+  "name": "angular-cli-portfolio",
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
@@ -28,7 +28,8 @@
   },
   "devDependencies": {
     "@types/jasmine": "^2.2.30",
-    "angular-cli": "1.0.0-beta.16",
+    "@types/node": "^6.0.42",
+    "angular-cli": "1.0.0-beta.18",
     "codelyzer": "~0.0.26",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",

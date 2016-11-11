@@ -39,8 +39,7 @@ deploy:
     - script:
         name: install angular-cli
         code: |
-          npm cache clean
-          npm install -g angular-cli@latest
+          npm install -g angular-cli
     - script:
         name: ng build
         code: |
