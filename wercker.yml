@@ -40,14 +40,14 @@ deploy:
         name: install angular-cli
         code: |
           npm install -g angular-cli
-    - script:
-        name: echo ng
-        code: |
-          echo "ng version $(ng -v) running"
-    - script:
-        name: ng build
-        code: |
-          ng build
+    # - script:
+    #     name: echo ng
+    #     code: |
+    #       echo "ng version $(ng -v) running"
+    # - script:
+    #     name: ng build
+    #     code: |
+    #       ng build
     - install-packages:
         packages: lftp
     - script:
