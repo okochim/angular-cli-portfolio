@@ -39,15 +39,12 @@ deploy:
     - script:
         name: install angular-cli
         code: |
-          npm install -g angular-cli
-    # - script:
-    #     name: echo ng
-    #     code: |
-    #       echo "ng version $(ng -v) running"
-    # - script:
-    #     name: ng build
-    #     code: |
-    #       ng build
+          npm cache clean
+          npm install -g angular-cli@latest
+    - script:
+        name: ng build
+        code: |
+          ng build
     - install-packages:
         packages: lftp
     - script:
