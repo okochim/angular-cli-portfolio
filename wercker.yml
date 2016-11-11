@@ -41,6 +41,10 @@ deploy:
         code: |
           npm install -g angular-cli
     - script:
+        name: echo ng
+        code: |
+          echo "ng version $(ng -v) running"
+    - script:
         name: ng build
         code: |
           ng build
